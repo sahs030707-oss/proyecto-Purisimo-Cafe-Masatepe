@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/*FONDO OSCURO*/
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/*CENTRADO*/
+.contenedor{
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background: rgba(255, 255, 255, 0.202);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    width: 350px;
+    text-align: center;
+    color: white;
+}
+
+.logo{
+    height: 150px;
+    width: 150px;
+}
+
+.card h2{
+    margin-bottom: 10px;
+}
+
+.card p{
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+/*INPUTS*/
+form input{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+/*BOTON*/
+form button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #6b3e26, #a67c52);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover{
+    transform: scale(1.05);
+}
